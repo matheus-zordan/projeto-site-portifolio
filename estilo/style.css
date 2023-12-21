@@ -16,7 +16,23 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
-
+.flex{
+    display: flex;
+}
+.botao-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fa3533;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.botao-contato button:hover {
+    box-shadow: 0px 0px 8px #fa3633;
+    transform: scale(1.05);
+}
 
 /* Estilo do cabeçalho */
 header {
@@ -50,18 +66,42 @@ header nav ul li {
     padding: 0 40px;
 }
 
-header .botao-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #fa3533;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-header .botao-contato button:hover {
-    box-shadow: 0px 0px 8px #fa3633;
-}
-
 /* Fim do estilo do cabeçalho */
+
+/* Estilo do topo do site */
+
+.topo-do-site{
+    padding: 40px 4%;
+}
+
+section .topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site .txt-topo-site h1 span{
+    color: #fa3533;
+}
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
