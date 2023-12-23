@@ -91,7 +91,7 @@ header nav.menu-desktop ul li {
 /* Fim do estilo do cabeçalho */
 
 /* Estilo do menu mobile */
-.menu-mobile{
+.menu-mobile {
     background-color: #000;
     height: 100vh;
     position: fixed;
@@ -102,11 +102,11 @@ header nav.menu-desktop ul li {
     overflow: hidden;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
     text-align: right;
 }
 
-.menu-mobile nav ul li a{
+.menu-mobile nav ul li a {
     color: #fff;
     font-size: 20px;
     font-weight: 300;
@@ -114,15 +114,16 @@ header nav.menu-desktop ul li {
     display: block;
 }
 
-.menu-mobile nav ul li a:hover{
-    background-color:#fa3533;
+.menu-mobile nav ul li a:hover {
+    background-color: #fa3533;
     color: #000;
 }
+
 .menu-mobile .botao-fechar {
     padding: 20px 5%;
 }
 
-.menu-mobile .botao-fechar i{
+.menu-mobile .botao-fechar i {
     color: #fa3533;
     font-size: 30px;
 }
@@ -161,6 +162,9 @@ section .topo-do-site .flex {
 /* Estilo das especialidades */
 section.especialidades {
     padding: 40px 4%;
+}
+.especialidades h2{
+    margin-top: 200px;
 }
 
 section.especialidades .flex {
@@ -455,7 +459,7 @@ footer .linha-footer p a {
         flex-direction: column;
     }
 
-    footer .linha-footer{
+    footer .linha-footer {
         text-align: center;
     }
 }
