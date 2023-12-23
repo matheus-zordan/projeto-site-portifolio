@@ -453,6 +453,7 @@ footer .linha-footer p a {
 
     h2.titulo {
         font-size: 28px;
+        margin-top: 0;
     }
 
     section.especialidades {
