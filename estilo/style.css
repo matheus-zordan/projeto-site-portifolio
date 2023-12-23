@@ -73,7 +73,7 @@ header a {
     display: inline-block;
 }
 
-header a:hover {
+header nav.menu-desktop a:hover {
     color: #fff;
     transform: scale(1.05);
     transition: .2s;
@@ -83,12 +83,49 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
 /* Fim do estilo do cabeçalho */
+
+/* Estilo do menu mobile */
+.menu-mobile{
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color:#fa3533;
+    color: #000;
+}
+.menu-mobile .botao-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile .botao-fechar i{
+    color: #fa3533;
+    font-size: 30px;
+}
 
 /* Estilo do topo do site */
 
