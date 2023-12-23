@@ -91,6 +91,26 @@ header nav.menu-desktop ul li {
 /* Fim do estilo do cabeçalho */
 
 /* Estilo do menu mobile */
+.botao-abrir-menu i {
+    color: #fa3533;
+    font-size: 50px;
+}
+.botao-abrir-menu{
+    display: none;
+}
+
+.overlay-menu {
+    background-color: #00000073;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+
 .menu-mobile {
     background-color: #000;
     height: 100vh;
@@ -100,6 +120,15 @@ header nav.menu-desktop ul li {
     z-index: 99999;
     width: 0%;
     overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
 }
 
 .menu-mobile nav ul {
@@ -127,6 +156,7 @@ header nav.menu-desktop ul li {
     color: #fa3533;
     font-size: 30px;
 }
+
 
 /* Estilo do topo do site */
 
@@ -163,7 +193,8 @@ section .topo-do-site .flex {
 section.especialidades {
     padding: 40px 4%;
 }
-.especialidades h2{
+
+.especialidades h2 {
     margin-top: 200px;
 }
 
@@ -461,5 +492,8 @@ footer .linha-footer p a {
 
     footer .linha-footer {
         text-align: center;
+    }
+    .botao-abrir-menu{
+        display: block;
     }
 }

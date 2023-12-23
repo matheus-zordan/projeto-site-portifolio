@@ -13,6 +13,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <script src="menu.js" defer></script>
 </head>
 
 <body>
@@ -36,7 +37,11 @@
                     <button>Contato</button>
                 </a>
             </div>
-            <div class="menu-mobile">
+
+            <div class="botao-abrir-menu" id="botao-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
                 <div class="botao-fechar">
                     <i class="bi bi-x-lg"></i>
                 </div>
@@ -50,6 +55,7 @@
                     </ul>
                 </nav>
             </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div>
     </header>
     <main>
